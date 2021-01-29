@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color: rgba(0, 0, 0, 0.322);
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    display: block;
+    text-decoration: none;
+    padding: 4px 13px;
+    margin: auto 15px;
+    color: white;
+    outline: none;
+    /* font-size: 1.2rem; */
+    font-size: 18px;
+    transition: all .2s;
+}
+
+#navbar li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transform: scale(1.15);
+}
+
+#intro::before{
+    content: ' ';
+    background: url('https://cms.qz.com/wp-content/uploads/2019/12/The-power-of-dance-e1575906582595.jpg?quality=75&strip=all&w=1200&h=630&crop=1') center center/cover;
+    position: absolute;
+    top: 0px;
+    height: 330px;
+    width: 100%;
+    z-index: -1;
+    opacity: .85;
+}
+#intro{
+    color: rgb(0, 0, 0);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #c3c3c357;
+    border-radius: 20px;
+    width: 40%;
+    height: 30%;
+    font-size: 36px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+.small{
+    /* font-size: 1.5rem; */
+    font-size: 24px;
+}
+
+.middle:hover{
+    background-color: rgba(223, 223, 223, 0.733);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#features{
+    text-align: center;
+}
+#features h1{
+    font-size: 32px;
+    font-family: 'Cabin', sans-serif;
+}
+.fhead{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.card{
+    border: 2px solid black;
+    margin: 15px 45px;
+    border-radius: 15px;
+    padding: 15px;
+}
+.simg img{
+    height: 200px;
+    transition: all .3s;
+}
+.simg img:hover{
+    transform: scale(1.1) skew(7deg);
+    filter: drop-shadow(5px 5px 2px rgb(252, 137, 137));
+}
+.ctxt{
+    margin: 10px;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    color: #b10606;
+}
+#contact{
+    width: 80vw;
+    margin: auto;
+    margin-top: 40px;
+    /* height: 350px; */
+}
+.form{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    height: 290px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    background-color: #efefef;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px -4px black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form h2{
+    margin: 15px;
+}
+.form label{
+    margin: 8px;
+}
+input{
+    margin: 2px;
+    padding: 3px 5px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 6px -4px black;
+    outline: none;
+    border: 0px solid;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    margin: 10px;
+    padding: 5px 73px;
+    box-shadow: 2px 2px 7px -3px #3c3c3c;
+    cursor: pointer;
+    /* color: blue; */
+}
+.btn:hover{
+    box-shadow: 2px 2px 7px -3px black;
+}
+.btn:active{
+    background-color: #ececec;
+}

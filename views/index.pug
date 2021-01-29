@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title Hitesh Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href='/') Home]
+            li #[a(href='/') Services]
+            li #[a(href='/') About]
+            li #[a(href='/') Contact Us]
+
+    section#intro
+        div.middle
+          div Welcome to Hitesh Academy
+          div.small Eat Dance Sleep repeat
+    
+    section#features
+          h1 Features
+          div.fhead
+            div.card
+              div.simg
+                img(src="../static/step1.png", alt="moves")
+              div.ctxt
+                p Best dance academy
+            div.card
+              div.simg
+                img(src="../static/step2.png", alt="moves")
+              div.ctxt
+                p Best dance academy
+            div.card
+              div.simg
+                img(src="../static/step3.png", alt="moves")
+              div.ctxt
+                p Best dance academy
+    
+    section#sponsors
+          div.sphead
+            h1 Our Sponsors
+          
+
+
+    script
+      include ../static/script.js
