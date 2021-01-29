@@ -23,9 +23,9 @@ app.set('views',path.join(__dirname,'views'))
 app.get('/',(req,res)=>{
     res.status(200).render('home.pug');
 });
-app.get('/contact',(req,res)=>{
-    res.status(200).render('contact.pug');
-});
+// app.get('/contact',(req,res)=>{
+//     res.status(200).render('contact.pug');
+// });
 
 app.post('/contact',(req,res)=>{
     var mydata = new contact(req.body);
